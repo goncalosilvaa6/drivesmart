@@ -1,0 +1,77 @@
+/* PALETA DE CORES */
+:root {
+    --cor-fundo: #efe2bd;
+    /* Bege claro */
+    --cor-caixas: #cbb485;
+    /* Bege médio */
+    --cor-texto: #5a4e3c;
+    /* Castanho suave */
+    --cor-claro: #ffffff;
+}
+
+/* BODY */
+* {
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* NAVBAR */
+.bg-navbar {
+    background-color: var(--cor-texto) !important;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--cor-fundo) !important;
+}
+
+.navbar-dark .nav-link:hover {
+    color: var(--cor-caixas) !important;
+}
+
+/* HEADER */
+.bg-header {
+    background-color: var(--cor-caixas);
+    color: var(--cor-texto);
+}
+
+.bg-header h1,
+.bg-header p {
+    color: var(--cor-texto);
+}
+
+/* BOTÕES */
+.btn-bg {
+    background-color: var(--cor-texto);
+    border-color: var(--cor-texto);
+    color: var(--cor-fundo);
+    border: var(--cor-texto) solid 10px;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+.btn-bg:hover {
+    background-color: var(--cor-caixas);
+    border-color: var(--cor-caixas);
+    color: var(--cor-texto);
+}
+
+/* CARDS */
+.card {
+    border: none;
+}
+
+.card-body {
+    background-color: var(--cor-caixas);
+    color: var(--cor-texto);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--cor-texto) !important;
+    color: var(--cor-fundo);
+}
