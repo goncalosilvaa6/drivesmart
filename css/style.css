@@ -44,6 +44,18 @@ body {
   color: var(--cor-texto);
 }
 
+/* Botões empilhados em telemóvel */
+@media (max-width: 767px) {
+  .btn-mobile-stack {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-mobile-stack .btn-bg {
+    width: 100%;
+  }
+}
+
 /* BOTÕES */
 .btn-bg {
   border: var(--cor-texto) solid 10px;
