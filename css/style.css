@@ -12,6 +12,7 @@
 /* BODY */
 * {
   font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,7 +65,7 @@ body {
   background-color: var(--cor-texto);
   color: var(--cor-fundo);
 
-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-bg:hover {
@@ -92,4 +93,19 @@ transition: 0.3s ease-in-out;
 footer {
   background-color: var(--cor-texto) !important;
   color: var(--cor-fundo);
+}
+
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+.btn-top {
+    border: var(--cor-texto) solid 10px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: var(--cor-texto);
+    color: var(--cor-fundo);
 }
