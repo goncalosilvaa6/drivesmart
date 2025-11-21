@@ -1,4 +1,3 @@
-/* PALETA DE CORES */
 :root {
   --cor-fundo: #efe2bd;
   /* Bege claro */
@@ -45,7 +44,7 @@ body {
   color: var(--cor-texto);
 }
 
-/* Botões empilhados em telemóvel */
+/* BOTÕES EMPILHADOS TELEMÓVEL */
 @media (max-width: 767px) {
   .btn-mobile-stack {
     flex-direction: column;
@@ -79,6 +78,21 @@ body {
   color: var(--cor-texto);
 }
 
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+}
+
+.btn-top {
+  border: var(--cor-texto) solid 10px;
+  border-radius: 25px 25px 25px 25px;
+  background-color: var(--cor-texto);
+  color: var(--cor-fundo);
+}
+
 /* CARDS */
 .card {
   border: none;
@@ -93,19 +107,4 @@ body {
 footer {
   background-color: var(--cor-texto) !important;
   color: var(--cor-fundo);
-}
-
-#btn-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  display: none;
-}
-
-.btn-top {
-    border: var(--cor-texto) solid 10px;
-    border-radius: 25px 25px 25px 25px;
-    background-color: var(--cor-texto);
-    color: var(--cor-fundo);
 }
