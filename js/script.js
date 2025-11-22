@@ -1,4 +1,5 @@
-window.onscroll = function() {
+// BACK TO TOP
+window.onscroll = function () {
   let btn = document.getElementById("btn-top");
 
   if (window.scrollY > 500) {
@@ -14,3 +15,7 @@ function backToTop() {
         behavior: 'smooth'
     });
 }
+
+// ALTERAÇÃO AUTOMÁTICA DO ANO FOOTER
+const year = new Date().getFullYear();
+document.getElementById("year").textContent = year;
