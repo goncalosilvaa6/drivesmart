@@ -76,6 +76,17 @@ body {
   color: var(--cor-texto);
 }
 
+/* CARDS */
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background-color: var(--cor-caixas);
+  color: var(--cor-texto);
+}
+
 /* BACK TO TOP */
 #btn-top {
   position: fixed;

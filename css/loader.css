@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eae0c7;
+    background-color: #efe2bd;
     transition: opacity 0.90s, visibility 0.90s;
 }
 
@@ -20,8 +20,8 @@
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #674C47;
-    border-top-color: #b8860b;
+    border: 15px solid #5a4e3c;
+    border-top-color: #cbb485;
     border-radius: 50%;
     animation: loading 0.90s ease infinite;
 }

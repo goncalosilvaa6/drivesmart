@@ -2,6 +2,10 @@
 window.onscroll = function () {
   let btn = document.getElementById("btn-top");
 
+  if (!btn) {
+    return;
+  }
+
   if (window.scrollY > 500) {
     btn.style.display = "block";
   } else {

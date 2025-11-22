@@ -66,39 +66,72 @@
     </header>
 
     <!-- SECÇÃO DA EQUIPA -->
-    <section class="py-5 bg-white">
-        <div class="container">
-            <h2 class="text-center mb-5">Equipa do Projeto</h2>
+<section id="equipa" class="bg-white position-relative py-5">
 
-            <div class="row g-4">
-                <!-- Membro 1 -->
-                <div class="col-md-6">
-                    <div class="card h-100 text-center shadow">
-                        <img src="img/template.jpg" class="card-img-top" alt="Fotografia do membro da equipa" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Gonçalo Silva</h5>
-                            <p class="card-text">Função</p>
-                        </div>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; z-index: 1;">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="width: calc(100% + 1.3px); height: 50px; transform: rotate(180deg);">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#f8f9fa"></path>
+        </svg>
+    </div>
+
+    <div class="container pt-5">
+        <div class="text-center mb-5 mt-4">
+            <h2 class="display-5 fw-bold" style="color: #333;">Equipa do Projeto</h2>
+            <div class="mx-auto mt-3" style="width: 60px; height: 4px; background-color: #d4af37;"></div>
+            <p class="text-muted mt-3">Os responsáveis pela inovação na DriveSmart.</p>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            
+            <div class="col-md-6 col-lg-4 text-center">
+                <div class="p-4">
+                    <div class="mx-auto mb-4 position-relative" style="width: 200px; height: 200px;">
+                        <img src="img/goncalo.jpeg" alt="Gonçalo Silva" 
+                             class="rounded-circle shadow" 
+                             style="width: 100%; height: 100%; object-fit: cover; border: 4px solid #d4af37; padding: 4px;">
                     </div>
-                </div>
-
-                <!-- Membro 2 -->
-                <div class="col-md-6">
-                    <div class="card h-100 text-center shadow">
-                        <img src="img/template.jpg" class="card-img-top" alt="Fotografia do membro da equipa" />
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold">Mariana Sousa</h5>
-                            <p class="card-text">Função</p>
-                        </div>
+                    
+                    <h4 class="fw-bold mb-1">Gonçalo Silva</h4>
+                    <p class="fw-bold text-uppercase small mb-3" style="color: #d4af37; letter-spacing: 1px;">Gestor de Projeto</p>
+                    
+                    <p class="text-muted small">
+                        Responsável pela coordenação geral e implementação das tecnologias de simulação.
+                    </p>
+                    
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="https://github.com/goncalosilvaa6" target="_blank" class="text-secondary text-decoration-none"><i class="bi bi-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-6 col-lg-4 text-center">
+                <div class="p-4">
+                    <div class="mx-auto mb-4 position-relative" style="width: 200px; height: 200px;">
+                        <img src="img/template.jpg" alt="Mariana Sousa" 
+                             class="rounded-circle shadow" 
+                             style="width: 100%; height: 100%; object-fit: cover; border: 4px solid #d4af37; padding: 4px;">
+                    </div>
+                    
+                    <h4 class="fw-bold mb-1">Mariana Sousa</h4>
+                    <p class="fw-bold text-uppercase small mb-3" style="color: #d4af37; letter-spacing: 1px;">Instrutora Chefe</p>
+                    
+                    <p class="text-muted small">
+                        Especialista em pedagogia rodoviária e condução defensiva com 10 anos de experiência.
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="#" class="text-secondary text-decoration-none"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="m-0">© 2025 DriveSmart — Escola de Condução Inteligente</p>
+    <footer class="text-center py-3">
+        <p class="m-0">© <span id="year"></span> DriveSmart — Escola de Condução Inteligente</p>
     </footer>
 
     <!-- Bootstrap JS -->
