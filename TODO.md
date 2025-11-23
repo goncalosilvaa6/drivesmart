@@ -6,17 +6,18 @@ Project Description
 
 ### Todo
 
-- [ ] galeria | Infográfico sobre consumo de combustível antes/depois e Alunos a usar óculos de realidade aumentada durante o treino  
+- [ ] trocar funções index.html  
+- [ ] projetc.html - Galeria | Infográfico sobre consumo de combustível antes/depois e Alunos a usar óculos de realidade aumentada durante o treino  
 
 ### In Progress
 
 - [ ] acabar index.html  
 - [ ] mais interatividade js  
-- [ ] novas imagens  
+- [ ] project.html  
 
 ### Done ✓
 
-- [x] ✅ project.html  
+- [x] novas imagens  
 - [x] btn back to top  
 - [x] alteração automatica do ano footer  
 - [x] new layout project.html  
