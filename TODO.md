@@ -6,16 +6,15 @@ Project Description
 
 ### Todo
 
+- [ ] terminar index  
 - [ ] troca automatica de frases no header js  
-- [ ] contador animado (estatisticas) js  
+- [ ] projetc.html | contador animado (estatisticas) js  
 - [ ] trocar funções index.html  
 - [ ] projetc.html - Galeria | Infográfico sobre consumo de combustível antes/depois e Alunos a usar óculos de realidade aumentada durante o treino  
 
 ### In Progress
 
-- [ ] acabar index.html  
 - [ ] mais interatividade js  
-- [ ] project.html  
 
 ### Done ✓
 

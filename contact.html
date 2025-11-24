@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveSmart - Escola de Condução Inteligente</title>
+
+    <link rel="shortcut icon" href="img/logotipo.svg" type="image/x-icon" />
+
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">DriveSmart</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projeto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partners.html">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <h2 class="display-5 fw-bold">Contactos</h2>
+      <div class="divider-custom mx-auto" style="width:60px;height:6px;background-color:var(--cor-caixas);"></div>
+      <p class="text-muted">Fala connosco — estamos aqui para ajudar.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card p-4 border-0 shadow-sm">
+          <h4>Formulário de Contacto</h4>
+          <form id="contactForm" action="#" method="post">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="assunto" class="form-label">Assunto</label>
+              <input type="text" id="assunto" name="assunto" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="6" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card p-4 border-0 shadow-sm">
+          <h4>Informação</h4>
+          <p class="mb-1"><strong>Morada:</strong> Rua Exemplo 123, 1000-000 Vila Nova de Gaia</p>
+          <p class="mb-1"><strong>Telefone:</strong> +351 21 000 0000</p>
+          <p class="mb-1"><strong>Email:</strong> info@drivesmart.pt</p>
+
+          <h5 class="mt-4">Horário</h5>
+          <p class="mb-0 small">Segunda — sexta: 09:00 — 18:00</p>
+          <p class="small">Sábado: 09:00 — 13:00</p>
+
+          <div class="mt-4">
+            <h6 class="mb-2">Localização</h6>
+            <!-- Embed a map if you have an API or just link to Google Maps -->
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">Ver no mapa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   <!-- FOOTER -->
+    <footer class="text-center py-3">
+        <p class="m-0">© <span id="year"></span> DriveSmart — Escola de Condução Inteligente</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- JS personalizado -->
+    <script src="js/script.js"></script>
+    <div class="loader"></div>
+    <script src="js/loader.js"></script>
+</body>
+
+</html>

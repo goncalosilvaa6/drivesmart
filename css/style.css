@@ -225,6 +225,137 @@ section {
   margin-bottom: 2rem;
 }
 
+/* --- 1. PARCEIROS (Estilo Polaroid/Card Index) --- */
+.card-retro {
+  background-color: var(--cor-claro);
+  /* Fundo BRANCO para destacar do bege do site */
+  border: 2px solid var(--cor-texto);
+  /* Borda escura */
+  box-shadow: 8px 8px 0px rgba(90, 78, 60, 0.2);
+  /* Sombra dura deslocada */
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card-retro:hover {
+  transform: translate(-4px, -4px);
+  /* Move-se para cima e esquerda */
+  box-shadow: 12px 12px 0px var(--cor-texto);
+  /* A sombra fica sólida e escura */
+}
+
+.card-img-wrapper-retro {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 2px dashed var(--cor-caixas);
+  /* Linha tracejada a separar imagem do texto */
+}
+
+.card-img-wrapper-retro img {
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  /* Opcional: Logos a preto e branco para estilo retro */
+  transition: 0.3s;
+}
+
+.card-retro:hover .card-img-wrapper-retro img {
+  filter: grayscale(0%);
+  /* Ganha cor no hover */
+  transform: scale(1.05);
+}
+
+
+/* --- 2. BENEFÍCIOS (Estilo "System Logs" - Mais limpo) --- */
+.benefit-row {
+  background-color: var(--cor-claro);
+  /* Fundo branco */
+  border-left: 6px solid var(--cor-caixas);
+  /* Barra colorida à esquerda */
+  padding: 1.5rem;
+  transition: 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.benefit-row:hover {
+  background-color: #fffbf0;
+  /* Branco sujo no hover */
+  border-left-color: var(--cor-texto);
+  /* Barra fica escura */
+  transform: translateX(5px);
+  /* Desliza para a direita */
+}
+
+.benefit-icon {
+  background-color: var(--cor-fundo);
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--cor-texto);
+  min-width: 50px;
+  text-align: center;
+  border: 1px solid var(--cor-caixas);
+}
+
+
+/* --- 3. CTA FINAL (Estilo Terminal Hacker) --- */
+.cta-terminal {
+  background-color: var(--cor-texto);
+  /* Fundo Escuro */
+  color: var(--cor-fundo);
+  /* Letra Clara */
+  border: 4px double var(--cor-caixas);
+  /* Borda dupla estilo antigo */
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Efeito de "Prompt" a piscar no título */
+.blink-cursor::after {
+  content: '_';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-terminal {
+  background-color: transparent;
+  border: 2px solid var(--cor-caixas);
+  color: var(--cor-caixas);
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-terminal:hover {
+  background-color: var(--cor-caixas);
+  color: var(--cor-texto);
+  box-shadow: 0 0 15px var(--cor-caixas);
+  /* Efeito "Glow" */
+}
+
 /* IMAGENS */
 .img-frame {
   border: 10px solid var(--cor-claro);
