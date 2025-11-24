@@ -38,18 +38,6 @@ Sem backend.
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 
-✅ 6. Contador animado (para estatísticas)
-
-Na página do projeto podes ter números animados:
-
-+450 alunos formados
-
-95% taxa de aprovação
-
-30% redução de erros no simulador
-
-Os números sobem do zero até ao valor final.
-
 ✅ 10. Troca automática de frases no header
 
 No topo pode aparecer:

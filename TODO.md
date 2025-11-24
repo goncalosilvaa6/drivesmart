@@ -6,20 +6,16 @@ Project Description
 
 ### Todo
 
-- [ ] terminar index  
+- [ ] index | funções, loader, footer  
 - [ ] troca automatica de frases no header js  
-- [ ] projetc.html | contador animado (estatisticas) js  
-- [ ] trocar funções index.html  
-- [ ] projetc.html - Galeria | Infográfico sobre consumo de combustível antes/depois e Alunos a usar óculos de realidade aumentada durante o treino  
 
 ### In Progress
 
-- [ ] mais interatividade js  
+- [ ] colocar comentários ALL CODE  
+- [ ] trocar imagens partners.html  
 
 ### Done ✓
 
+- [x] contador animado para estatísticas  
 - [x] novas imagens  
-- [x] btn back to top  
-- [x] alteração automatica do ano footer  
-- [x] new layout project.html  
 
