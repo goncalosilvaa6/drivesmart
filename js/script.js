@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const alvo = parseInt(elemento.getAttribute("data-target"));
     
     let numeroAtual = 0;
-    const salto = alvo / 70; 
+    const salto = alvo / 350; 
 
     const cronometro = setInterval(() => {
       numeroAtual += salto;
