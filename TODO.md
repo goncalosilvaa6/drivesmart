@@ -6,8 +6,7 @@ Project Description
 
 ### Todo
 
-- [ ] index | funções, loader, footer  
-- [ ] troca automatica de frases no header js  
+- [ ] contact | validação basica, messagem sucesso -> js  
 
 ### In Progress
 
@@ -16,6 +15,8 @@ Project Description
 
 ### Done ✓
 
+- [x] troca automatica de frases no header js  
+- [x] index | funções, loader, footer  
 - [x] contador animado para estatísticas  
 - [x] novas imagens  
 

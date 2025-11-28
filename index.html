@@ -15,6 +15,7 @@
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +25,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
         <div class="container">
@@ -57,7 +59,7 @@
     <header class="bg-header py-5">
         <div class="container text-center">
             <h1 class="display-4 fw-bold">DriveSmart</h1>
-            <p class="lead mb-4">
+            <p id="phrase-header" class="lead mb-4 phrase-animated">
                 Investigação sobre Condução Inteligente e Sustentável aplicada à
                 formação de novos condutores.
             </p>
@@ -67,27 +69,7 @@
 
     <!-- SECÇÃO DA EQUIPA -->
     <section id="equipa" class="bg-white position-relative py-5">
-        <div style="
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          overflow: hidden;
-          line-height: 0;
-          z-index: 1;
-        ">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="
-            width: calc(100% + 1.3px);
-            height: 50px;
-            transform: rotate(180deg);
-          ">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    fill="#f8f9fa"></path>
-            </svg>
-        </div>
-
-        <div class="container pt-5">
+        <div class="container pt-3">
             <div class="text-center mb-5 mt-4">
                 <h2 class="display-5 fw-bold" style="color: #333">
                     Equipa do Projeto
@@ -102,23 +84,12 @@
                 <div class="col-md-6 col-lg-4 text-center">
                     <div class="p-4">
                         <div class="mx-auto mb-4 position-relative" style="width: 200px; height: 200px">
-                            <img src="img/goncalo.jpeg" alt="Gonçalo Silva" class="rounded-circle shadow" style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 4px solid #d4af37;
-                    padding: 4px;
-                  " />
+                            <img src="img/goncalo.jpeg" alt="Gonçalo Silva" class="rounded-circle shadow border-profile" />
                         </div>
 
                         <h4 class="fw-bold mb-1">Gonçalo Silva</h4>
                         <p class="fw-bold text-uppercase small mb-3" style="color: #d4af37; letter-spacing: 1px">
-                            Gestor de Projeto
-                        </p>
-
-                        <p class="text-muted small">
-                            Responsável pela coordenação geral e implementação das
-                            tecnologias de simulação.
+                            a22408445
                         </p>
 
                         <div class="d-flex justify-content-center gap-3 mt-3">
@@ -131,23 +102,12 @@
                 <div class="col-md-6 col-lg-4 text-center">
                     <div class="p-4">
                         <div class="mx-auto mb-4 position-relative" style="width: 200px; height: 200px">
-                            <img src="img/mariana.jpg" alt="Mariana Sousa" class="rounded-circle shadow" style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border: 4px solid #d4af37;
-                    padding: 4px;
-                  " />
+                            <img src="img/mariana.jpg" alt="Mariana Sousa" class="rounded-circle shadow border-profile" />
                         </div>
 
                         <h4 class="fw-bold mb-1">Mariana Sousa</h4>
                         <p class="fw-bold text-uppercase small mb-3" style="color: #d4af37; letter-spacing: 1px">
-                            Instrutora Chefe
-                        </p>
-
-                        <p class="text-muted small">
-                            Especialista em pedagogia rodoviária e condução defensiva com 10
-                            anos de experiência.
+                            a
                         </p>
 
                         <div class="d-flex justify-content-center gap-3 mt-3">
@@ -172,8 +132,10 @@
                 </div>
 
                 <div class="d-flex gap-3">
-                    <a href="https://facebook.com" class="footer-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="https://instagram.com" class="footer-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://facebook.com" class="footer-icon" aria-label="Facebook"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com" class="footer-icon" aria-label="Instagram"><i
+                            class="bi bi-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -186,7 +148,7 @@
 
     <!-- JS personalizado -->
     <script src="js/script.js"></script>
-    <div class="loader"></div>
+
     <script src="js/loader.js"></script>
 </body>
 

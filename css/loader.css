@@ -2,13 +2,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #efe2bd;
     transition: opacity 0.90s, visibility 0.90s;
+    z-index: 9999;
 }
 
 .loader-hidden {

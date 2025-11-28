@@ -1,4 +1,6 @@
-/* COLORS */
+/* =========================================
+   VARIAVEIS E BASE
+   ========================================= */
 :root {
   --cor-fundo: #efe2bd;
   --cor-caixas: #cbb485;
@@ -6,18 +8,22 @@
   --cor-claro: #ffffff;
 }
 
-/* BASE */
 * {
   font-family: "JetBrains Mono", monospace;
   scroll-behavior: smooth;
 }
 
+html,
 body {
+  overflow-x: hidden;
+  max-width: 100%;
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
 }
 
-/* NAVBAR */
+/* =========================================
+   NAVBAR & HEADER
+   ========================================= */
 .bg-navbar {
   background-color: var(--cor-texto) !important;
 }
@@ -31,7 +37,6 @@ body {
   color: var(--cor-caixas) !important;
 }
 
-/* HEADER */
 .bg-header {
   background-color: var(--cor-caixas);
   color: var(--cor-texto);
@@ -42,7 +47,51 @@ body {
   color: var(--cor-texto);
 }
 
-/* BOTÕES EMPILHADOS TELEMÓVEL */
+/* =========================================
+   ELEMENTOS DECORATIVOS (ONDAS)
+   ========================================= */
+.wave-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+}
+
+.wave-svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  transform: rotate(180deg);
+}
+
+.content-safe-area {
+  position: relative;
+  z-index: 2;
+  margin-top: 1rem;
+}
+
+/* =========================================
+   BOTÕES
+   ========================================= */
+.btn-bg {
+  border: var(--cor-texto) solid 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: var(--cor-texto);
+  color: var(--cor-fundo);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-bg:hover {
+  border: var(--cor-fundo) solid 10px;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: 0.5s ease-in-out;
+}
+
 @media (max-width: 767px) {
   .btn-mobile-stack {
     flex-direction: column;
@@ -54,40 +103,6 @@ body {
   }
 }
 
-/* BOTÕES */
-.btn-bg {
-  border: var(--cor-texto) solid 10px;
-  border-radius: 5px 5px 5px 5px;
-  text-decoration: none;
-  background-color: var(--cor-texto);
-  color: var(--cor-fundo);
-
-  transition: 0.3s ease-in-out;
-}
-
-.btn-bg:hover {
-  border: var(--cor-fundo) solid 10px;
-  border-radius: 5px 5px 5px 5px;
-  text-decoration: none;
-
-  transition: 0.5s ease-in-out;
-
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-}
-
-/* CARDS */
-
-.card {
-  border: none;
-}
-
-.card-body {
-  background-color: var(--cor-caixas);
-  color: var(--cor-texto);
-}
-
-/* BACK TO TOP */
 #btn-top {
   position: fixed;
   bottom: 20px;
@@ -100,7 +115,49 @@ body {
   background-color: var(--cor-caixas);
   color: #ffffff;
   border: 2px solid #ffffff;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.cta-terminal {
+  background-color: var(--cor-texto);
+  color: var(--cor-fundo);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 4px solid var(--cor-caixas);
+}
+
+.btn-terminal {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid var(--cor-caixas);
+  color: var(--cor-caixas);
+  padding: 10px 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-terminal:hover {
+  background-color: var(--cor-caixas);
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+/* =========================================
+   LAYOUT & SECÇÕES GERAIS
+   ========================================= */
+section {
+  padding: 80px 0;
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  background-color: var(--cor-caixas);
+  color: var(--cor-texto);
 }
 
 h2 {
@@ -116,9 +173,34 @@ h2 {
   border-radius: 0;
 }
 
-/* SECÇÕES */
-section {
-  padding: 80px 0;
+.border-profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid #d4af37;
+  padding: 4px;
+}
+
+.phrase-animated {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.bg-custom-light {
+  background-color: var(--cor-fundo);
+}
+
+.bg-custom-white {
+  background-color: var(--cor-claro);
+}
+
+.bg-custom-dark {
+  background-color: var(--cor-texto);
+  color: var(--cor-fundo);
 }
 
 #enquadramento {
@@ -141,34 +223,15 @@ section {
   min-height: 400px;
 }
 
-.res-img {
-  border: 4px solid var(--cor-caixas);
-  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+/* Imagens Gerais */
+.img-frame {
+  border: 10px solid var(--cor-claro);
+  box-shadow: 10px 10px 0px rgba(90, 78, 60, 0.2);
 }
 
-.res-background {
-  background-color: var(--cor-fundo);
-}
-
-.res-title-color {
-  color: var(--cor-caixas);
-}
-
-/* ALTERNÂNCIA DE FUNDOS */
-.bg-custom-light {
-  background-color: var(--cor-fundo);
-}
-
-.bg-custom-white {
-  background-color: var(--cor-claro);
-}
-
-.bg-custom-dark {
-  background-color: var(--cor-texto);
-  color: var(--cor-fundo);
-}
-
-/* OBJETIVOS */
+/* =========================================
+   OBJETIVOS, RESULTADOS & ESTATÍSTICAS
+   ========================================= */
 .card-custom {
   background-color: var(--cor-claro);
   border: 2px solid var(--cor-caixas);
@@ -197,7 +260,46 @@ section {
   transition: color 0.3s;
 }
 
-/* METODOLOGIA */
+.result-item {
+  border-left: 4px solid var(--cor-caixas);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.res-img {
+  border: 4px solid var(--cor-caixas);
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.res-background {
+  background-color: var(--cor-fundo);
+}
+
+.res-title-color {
+  color: var(--cor-caixas);
+}
+
+.stat-box {
+  background-color: #ffffff;
+  border: 3px solid var(--cor-texto);
+  box-shadow: 8px 8px 0px var(--cor-caixas);
+  padding: 2rem 1rem;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 12px 0px var(--cor-texto);
+}
+
+.stat-box h3 {
+  color: var(--cor-texto);
+}
+
+/* =========================================
+   METODOLOGIA & PARCEIROS
+   ========================================= */
 .step-card {
   background-color: transparent;
   border: 2px dashed var(--cor-texto);
@@ -217,15 +319,6 @@ section {
   background: var(--cor-fundo);
   padding: 0 10px;
 }
-
-/* RESULTADOS */
-.result-item {
-  border-left: 4px solid var(--cor-caixas);
-  padding-left: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* PARTNERS */
 
 .card-retro {
   background-color: #ffffff;
@@ -267,12 +360,6 @@ section {
   justify-content: center;
 }
 
-.card-retro h5 {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-
 .benefit-simple {
   background-color: #ffffff;
   padding: 20px;
@@ -294,60 +381,14 @@ section {
   display: block;
 }
 
-
-.cta-terminal {
-  background-color: var(--cor-texto);
-  color: var(--cor-fundo);
-  padding: 3rem 1.5rem;
-  text-align: center;
-  border-radius: 10px;
-  border: 4px solid var(--cor-caixas);
-}
-
-.btn-terminal {
-  display: inline-block;
-  margin-top: 15px;
-  background-color: transparent;
-  border: 2px solid var(--cor-caixas);
-  color: var(--cor-caixas);
-  padding: 10px 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-terminal:hover {
-  background-color: var(--cor-caixas);
-  color: var(--cor-texto);
-  text-decoration: none;
-}
-
-.blink-cursor::after {
-  content: '_';
-  animation: piscar 1s infinite;
-}
-
-@keyframes piscar {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* CONTACT */
-
+/* =========================================
+   CONTACTOS
+   ========================================= */
 .text-highlight {
   color: var(--cor-caixas) !important;
 }
 
-/* Substitui o estilo do <hr> */
-.divider-custom {
+.divider-contact {
   border-color: var(--cor-caixas);
   opacity: 0.3;
   margin: 2rem 0;
@@ -428,7 +469,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
   .contact-box {
     padding: 1.5rem;
     box-shadow: 6px 6px 0px var(--cor-caixas);
@@ -451,37 +491,82 @@ section {
   }
 }
 
-/* ESTATISTICAS */
-.stat-box {
+/* =========================================
+   GALERIA & GRÁFICOS
+   ========================================= */
+.gallery-box {
   background-color: #ffffff;
   border: 3px solid var(--cor-texto);
-  /* Borda castanha */
-  box-shadow: 8px 8px 0px var(--cor-caixas);
-  /* Sombra bege dura */
-  padding: 2rem 1rem;
+  padding: 2rem;
   height: 100%;
-  transition: 0.3s;
+  box-shadow: 10px 10px 0px var(--cor-caixas);
 }
 
-.stat-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 12px 12px 0px var(--cor-texto);
-  /* Sombra fica escura no hover */
-}
-
-/* Cor do número grande */
-.stat-box h3 {
+.chart-label {
+  font-weight: bold;
   color: var(--cor-texto);
-  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* IMAGENS */
-.img-frame {
-  border: 10px solid var(--cor-claro);
-  box-shadow: 10px 10px 0px rgba(90, 78, 60, 0.2);
+.chart-bar-container {
+  width: 100%;
+  height: 35px;
+  background-color: var(--cor-fundo);
+  border: 2px solid var(--cor-texto);
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
-/* FOOTER */
+.chart-bar-fill {
+  height: 100%;
+  background-color: var(--cor-caixas);
+  border-right: 2px solid var(--cor-texto);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.first-bar {
+  width: 90%;
+  background-color: #d6d6d6;
+}
+
+.second-bar {
+  width: 60%;
+  background-color: var(--cor-caixas);
+}
+
+.gallery-photo-frame {
+  border: 2px dashed var(--cor-texto);
+  padding: 10px;
+  background-color: var(--cor-fundo);
+  margin-bottom: 15px;
+}
+
+.gallery-photo-frame img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border: 2px solid var(--cor-texto);
+}
+
+.color-subtitle-photo {
+  color: var(--cor-texto);
+}
+
+.color-second-bar {
+  color: green;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
 footer {
   background-color: var(--cor-texto) !important;
   color: var(--cor-fundo);
@@ -504,68 +589,24 @@ footer {
   transform: translateY(-3px);
 }
 
-
-/* --- SECÇÃO GALERIA (Estilo Técnico) --- */
-
-/* Caixa base para ambos os elementos */
-.gallery-box {
-  background-color: #ffffff;
-  border: 3px solid var(--cor-texto);
-  /* Borda grossa */
-  padding: 2rem;
-  height: 100%;
-  box-shadow: 10px 10px 0px var(--cor-caixas);
-  /* Sombra dura */
+/* =========================================
+   LOADER & ANIMAÇÕES
+   ========================================= */
+.blink-cursor::after {
+  content: '_';
+  animation: piscar 1s infinite;
 }
 
-/* --- O GRÁFICO DE BARRAS --- */
-.chart-label {
-  font-weight: bold;
-  color: var(--cor-texto);
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-}
+@keyframes piscar {
+  0% {
+    opacity: 1;
+  }
 
-.chart-bar-container {
-  width: 100%;
-  height: 35px;
-  /* Altura da barra */
-  background-color: var(--cor-fundo);
-  /* Fundo bege claro (vazio) */
-  border: 2px solid var(--cor-texto);
-  /* Borda à volta da barra */
-  margin-bottom: 1.5rem;
-  position: relative;
-}
+  50% {
+    opacity: 0;
+  }
 
-.chart-bar-fill {
-  height: 100%;
-  background-color: var(--cor-caixas);
-  /* A barra cheia é bege escuro */
-  border-right: 2px solid var(--cor-texto);
-  /* Linha no fim da barra */
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  /* Texto alinhado à direita */
-  padding-right: 10px;
-  font-weight: bold;
-  color: var(--cor-texto);
-}
-
-/* --- A FOTO VR --- */
-.gallery-photo-frame {
-  border: 2px dashed var(--cor-texto);
-  padding: 10px;
-  background-color: var(--cor-fundo);
-  margin-bottom: 15px;
-}
-
-.gallery-photo-frame img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  border: 2px solid var(--cor-texto);
+  100% {
+    opacity: 1;
+  }
 }
