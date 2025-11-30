@@ -48,32 +48,6 @@ body {
 }
 
 /* =========================================
-   ELEMENTOS DECORATIVOS (ONDAS)
-   ========================================= */
-.wave-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 1;
-}
-
-.wave-svg {
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 50px;
-  transform: rotate(180deg);
-}
-
-.content-safe-area {
-  position: relative;
-  z-index: 2;
-  margin-top: 1rem;
-}
-
-/* =========================================
    BOTÕES
    ========================================= */
 .btn-bg {
@@ -125,6 +99,11 @@ body {
   text-align: center;
   border-radius: 10px;
   border: 4px solid var(--cor-caixas);
+}
+
+.cta-title {
+  color: var(--cor-caixas);
+  letter-spacing: 2px;
 }
 
 .btn-terminal {
@@ -179,6 +158,16 @@ h2 {
   object-fit: cover;
   border: 4px solid #d4af37;
   padding: 4px;
+}
+
+.photo-wh {
+  width: 200px;
+  height: 200px
+}
+
+.student-nr-color {
+  color: #d4af37;
+  letter-spacing: 1px
 }
 
 .phrase-animated {
@@ -360,6 +349,19 @@ h2 {
   justify-content: center;
 }
 
+.max-w-col {
+  max-width: 400px;
+}
+
+.line {
+  color: var(--cor-texto);
+  opacity: 1;
+}
+
+.advantages-title {
+  color: var(--cor-texto);
+}
+
 .benefit-simple {
   background-color: #ffffff;
   padding: 20px;
@@ -435,6 +437,11 @@ h2 {
   background-color: #ffffff !important;
   box-shadow: 4px 4px 0px var(--cor-texto) !important;
   outline: none;
+}
+
+.input-error {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
 }
 
 .info-item {

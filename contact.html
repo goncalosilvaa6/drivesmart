@@ -74,15 +74,20 @@
           <h4 class="contact-title">Enviar Mensagem</h4>
           <p class="small text-muted mb-4">Preenche os dados abaixo. Respondemos em 24h.</p>
 
-          <form id="contactForm" action="#" method="post">
+          <form id="contactForm" action="#" method="post" novalidate>
             <div class="row">
               <div class="col-12 col-md-6 mb-3">
                 <label for="nome" class="form-label-retro">Nome</label>
-                <input type="text" id="nome" name="nome" class="form-control form-retro" required>
+                <input type="text" id="nome" name="nome" class="form-control form-retro">
+
+                <small id="erro-nome" class="text-danger fw-bold" style="display: none;"></small>
               </div>
+
               <div class="col-12 col-md-6 mb-3">
                 <label for="email" class="form-label-retro">Email</label>
-                <input type="email" id="email" name="email" class="form-control form-retro" required>
+                <input type="email" id="email" name="email" class="form-control form-retro">
+
+                <small id="erro-email" class="text-danger fw-bold" style="display: none;"></small>
               </div>
             </div>
 
@@ -93,10 +98,16 @@
 
             <div class="mb-4">
               <label for="mensagem" class="form-label-retro">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" class="form-control form-retro" required></textarea>
+              <textarea id="mensagem" name="mensagem" rows="5" class="form-control form-retro"></textarea>
+
+              <small id="erro-mensagem" class="text-danger fw-bold" style="display: none;"></small>
             </div>
 
-            <button type="submit" class="btn btn-bgg py-3 px-4 fw-bold w-100 w-md-auto">
+            <div id="mensagem-sucesso" class="alert alert-success mt-3 text-center" style="display: none;">
+              <i class="bi bi-check-circle-fill me-2"></i> Mensagem enviada com sucesso!
+            </div>
+
+            <button type="submit" class="btn btn-bg py-3 px-4 fw-bold w-100 w-md-auto">
               Enviar Mensagem <i class="bi bi-send ms-2"></i>
             </button>
           </form>
