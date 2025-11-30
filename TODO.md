@@ -9,6 +9,7 @@ Project Description
 
 ### In Progress
 
+- [ ] rever TUDO  
 - [ ] colocar comentários ALL CODE  
 
 ### Done ✓
