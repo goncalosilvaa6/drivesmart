@@ -1,207 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveSmart - Escola de Condução Inteligente</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DriveSmart - Escola de Condução Inteligente</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logotipo.svg" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="img/logotipo.svg" type="image/x-icon" />
+    <!-- CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css" />
 
-  <!-- CSS PERSONALIZADO -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/loader.css">
+    <!-- BOOTSTRAP 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap 5 CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- BOOTSTRAP 5 ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- LOADING ANIMATION -->
+    <div class="loader"></div>
 
-<body>
-  <div class="loader"></div>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">DriveSmart</a>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">DriveSmart</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
-        aria-expanded="false" aria-label="Alternar navegação">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- BOTÃO MOBILE -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="project.html">Projeto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="partners.html">Parceiros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contactos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HEADER -->
-  <header class="bg-header py-5">
-    <div class="container text-center">
-      <h1 class="display-4 fw-bold">Contactos</h1>
-      <p class="lead mb-4">
-        Fala connosco — estamos aqui para ajudar.
-      </p>
-    </div>
-  </header>
-
-  <div class="container py-5">
-    <div class="row g-4 g-lg-5">
-
-      <div class="col-lg-7">
-        <div class="contact-box">
-          <h4 class="contact-title">Enviar Mensagem</h4>
-          <p class="small text-muted mb-4">Preenche os dados abaixo. Respondemos em 24h.</p>
-
-          <form id="contactForm" action="#" method="post" novalidate>
-            <div class="row">
-              <div class="col-12 col-md-6 mb-3">
-                <label for="nome" class="form-label-retro">Nome</label>
-                <input type="text" id="nome" name="nome" class="form-control form-retro">
-
-                <small id="erro-nome" class="text-danger fw-bold" style="display: none;"></small>
-              </div>
-
-              <div class="col-12 col-md-6 mb-3">
-                <label for="email" class="form-label-retro">Email</label>
-                <input type="email" id="email" name="email" class="form-control form-retro">
-
-                <small id="erro-email" class="text-danger fw-bold" style="display: none;"></small>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="assunto" class="form-label-retro">Assunto</label>
-              <input type="text" id="assunto" name="assunto" class="form-control form-retro">
-            </div>
-
-            <div class="mb-4">
-              <label for="mensagem" class="form-label-retro">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" class="form-control form-retro"></textarea>
-
-              <small id="erro-mensagem" class="text-danger fw-bold" style="display: none;"></small>
-            </div>
-
-            <div id="mensagem-sucesso" class="alert alert-success mt-3 text-center" style="display: none;">
-              <i class="bi bi-check-circle-fill me-2"></i> Mensagem enviada com sucesso!
-            </div>
-
-            <button type="submit" class="btn btn-bg py-3 px-4 fw-bold w-100 w-md-auto">
-              Enviar Mensagem <i class="bi bi-send ms-2"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div class="col-lg-5">
-        <div class="contact-box info-box-dark">
-          <h4 class="contact-title title-light">Contactos</h4>
-
-          <div class="mt-4">
-            <div class="info-item">
-              <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
-              <div>
-                <strong class="d-block text-uppercase small text-highlight">Morada</strong>
-                <span>Rua Exemplo 123,<br>4400-000 Vila Nova de Gaia</span>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
-              <div>
-                <strong class="d-block text-uppercase small text-highlight">Telefone</strong>
-                <span>+351 123 456 789</span>
-              </div>
-            </div>
-
-            <div class="info-item">
-              <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
-              <div>
-                <strong class="d-block text-uppercase small text-highlight">Email</strong>
-                <span>info@drivesmart.pt</span>
-              </div>
-            </div>
-          </div>
-
-          <hr class="divider-custom">
-
-          <h5 class="fw-bold mb-3 text-highlight">Horário</h5>
-
-          <ul class="list-unstyled small opacity-75">
-            <li class="d-flex justify-content-between mb-2">
-              <span>Segunda — Sexta:</span>
-              <span>09:00 — 18:00</span>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
             </li>
-            <li class="d-flex justify-content-between">
-              <span>Sábado:</span>
-              <span>09:00 — 13:00</span>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">Projeto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partners.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contactos</a>
             </li>
           </ul>
+        </div>
+      </div>
+    </nav>
 
-          <div class="mt-4 text-center">
-            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-light w-100 btn-map">
-              <i class="bi bi-map me-2"></i> Abrir no Mapa
-            </a>
+    <!-- HEADER -->
+    <header class="bg-header py-5">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Contactos</h1>
+        <p class="lead mb-4">Fala connosco — estamos aqui para ajudar.</p>
+      </div>
+    </header>
+
+    <!-- CONTEÚDO CONTACTOS -->
+    <div class="container py-5">
+      <div class="row g-4 g-lg-5">
+        <!-- FORMULÁRIO DE CONTACTO -->
+        <div class="col-lg-7">
+          <div class="contact-box">
+            <h4 class="contact-title">Enviar Mensagem</h4>
+            <p class="small text-muted mb-4">
+              Preenche os dados abaixo. Respondemos em 24h.
+            </p>
+
+            <form id="contactForm" action="#" method="post" novalidate>
+              <div class="row">
+                <!-- NOME -->
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="nome" class="form-label-retro">Nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    class="form-control form-retro"
+                  />
+                  <!-- ERRO -->
+                  <small
+                    id="erro-nome"
+                    class="text-danger fw-bold"
+                    style="display: none"
+                  ></small>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="col-12 col-md-6 mb-3">
+                  <label for="email" class="form-label-retro">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control form-retro"
+                  />
+                  <!-- ERRO -->
+                  <small
+                    id="erro-email"
+                    class="text-danger fw-bold"
+                    style="display: none"
+                  ></small>
+                </div>
+              </div>
+
+              <!-- ASSUNTO -->
+              <div class="mb-3">
+                <label for="assunto" class="form-label-retro">Assunto</label>
+                <input
+                  type="text"
+                  id="assunto"
+                  name="assunto"
+                  class="form-control form-retro"
+                />
+              </div>
+
+              <!-- MENSAGEM -->
+              <div class="mb-4">
+                <label for="mensagem" class="form-label-retro">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  class="form-control form-retro"
+                ></textarea>
+                <!-- ERRO -->
+                <small
+                  id="erro-mensagem"
+                  class="text-danger fw-bold"
+                  style="display: none"
+                ></small>
+              </div>
+
+              <!-- MENSAGEM DE SUCESSO (ESCONDIDA) -->
+              <div
+                id="mensagem-sucesso"
+                class="alert alert-success mt-3 text-center"
+                style="display: none"
+              >
+                <i class="bi bi-check-circle-fill me-2"></i> Mensagem enviada
+                com sucesso!
+              </div>
+
+              <!-- BOTÃO SUBMIT -->
+              <button
+                type="submit"
+                class="btn btn-bg py-3 px-4 fw-bold w-100 w-md-auto"
+              >
+                Enviar Mensagem <i class="bi bi-send ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- INFORMAÇÕES CONTACTO -->
+        <div class="col-lg-5">
+          <div class="contact-box info-box-dark">
+            <h4 class="contact-title title-light">Contactos</h4>
+
+            <!-- MORADA -->
+            <div class="mt-4">
+              <div class="info-item">
+                <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <strong class="d-block text-uppercase small text-highlight"
+                    >Morada</strong
+                  >
+                  <span>Rua Exemplo 123,<br />4400-000 Vila Nova de Gaia</span>
+                </div>
+              </div>
+
+              <!-- TELEFONE -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div>
+                  <strong class="d-block text-uppercase small text-highlight"
+                    >Telefone</strong
+                  >
+                  <span>+351 123 456 789</span>
+                </div>
+              </div>
+
+              <!-- EMAIL -->
+              <div class="info-item">
+                <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <strong class="d-block text-uppercase small text-highlight"
+                    >Email</strong
+                  >
+                  <span>info@drivesmart.pt</span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="divider-custom" />
+
+            <!-- HORÁRIO -->
+            <h5 class="fw-bold mb-3 text-highlight">Horário</h5>
+
+            <ul class="list-unstyled small opacity-75">
+              <li class="d-flex justify-content-between mb-2">
+                <span>Segunda — Sexta:</span>
+                <span>09:00 — 18:00</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <span>Sábado:</span>
+                <span>09:00 — 13:00</span>
+              </li>
+            </ul>
+
+            <!-- BOTÃO ABRIR MAPA -->
+            <div class="mt-4 text-center">
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="btn btn-outline-light w-100 btn-map"
+              >
+                <i class="bi bi-map me-2"></i> Abrir no Mapa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-4 mt-auto">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <!-- COPYRIGHT -->
+          <div class="text-center text-md-start">
+            <p class="m-0 small fw-bold">
+              © <span id="year"></span> DriveSmart
+            </p>
+            <p class="m-0 xsmall opacity-75">Escola de Condução Inteligente</p>
           </div>
 
+          <!-- ICONS SOCIAIS -->
+          <div class="d-flex gap-3">
+            <a
+              href="https://facebook.com"
+              class="footer-icon"
+              aria-label="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              class="footer-icon"
+              aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer class="py-4 mt-auto">
-    <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
-        <div class="text-center text-md-start">
-          <p class="m-0 small fw-bold">
-            © <span id="year"></span> DriveSmart
-          </p>
-          <p class="m-0 xsmall opacity-75">Escola de Condução Inteligente</p>
-        </div>
+    <!-- JS PERSONALIZADO -->
+    <script src="js/script.js"></script>
+    <script src="js/loader.js"></script>
 
-        <div class="d-flex gap-3">
-          <a href="https://facebook.com" class="footer-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://instagram.com" class="footer-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
-  <!-- JS personalizado -->
-  <script src="js/script.js"></script>
-  <script src="js/loader.js"></script>
-
-  <!-- BTN BACK TO TOP -->
-  <button id="btn-top" class="btn-top" onclick="backToTop()"><i class="bi bi-arrow-up"></i></button>
-</body>
-
+    <!-- BOTÃO BACK TO TOP -->
+    <button id="btn-top" class="btn-top" onclick="backToTop()">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </body>
 </html>
