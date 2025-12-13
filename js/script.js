@@ -35,7 +35,6 @@ const year = new Date().getFullYear();
 document.getElementById("year").textContent = year;
 
 // CONTADOR ESTATÍSTICAS
-
 document.addEventListener("DOMContentLoaded", () => {
   // selecionar a secção inteira que contém os números
   const seccao = document.querySelector("#resultados");
